@@ -4,6 +4,7 @@ import Specialities from "@/components/Specialities";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Specialities />
+        <RecentProjects />
         <Contact />
         <Footer />
       </div>

@@ -4,7 +4,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <div className="mt-72">
+    <div className="mt-52">
       <div className="header-div">
         <h1 className="font-mono text-5xl text-center tracking-tight">
           Contact Me

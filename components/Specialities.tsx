@@ -23,7 +23,7 @@ const Specialities = () => {
               message={
                 "Experienced in Python, Java, TypeScript, Linux, and many more languages"
               }
-              icon={<RiComputerLine size={50} />}
+              icon={<RiComputerLine size={50} color="#bae6fd" />}
             />
           </div>
           <div className="hover:-translate-y-7 ease-in-out duration-500">
@@ -32,7 +32,7 @@ const Specialities = () => {
               message={
                 "Extremely passionate about UI/UX, 2-3 years experience with HTML, CSS, TS, React, and NextJS"
               }
-              icon={<FaRegFileCode size={50} />}
+              icon={<FaRegFileCode size={50} color="#bae6fd" />}
             />
           </div>
           <div className="hover:-translate-y-7 ease-in-out duration-500">
@@ -41,7 +41,7 @@ const Specialities = () => {
               message={
                 "Skilled in developing user-friendly mobile apps through Swift, with an emphasis on AI integration"
               }
-              icon={<SiXcode size={50} />}
+              icon={<SiXcode size={50} color="#bae6fd" />}
             />
           </div>
         </div>
