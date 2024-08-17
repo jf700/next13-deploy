@@ -12,13 +12,15 @@ const AboutMe = () => {
   return (
     <FadeIn>
       <div className="mt-40">
-        <div className="flex flex-col text-center ">
-          <h1 className="text-5xl font-mono tracking-tight">About Me</h1>
+        <div className="flex flex-col justify-center ">
+          <h1 className="text-5xl font-mono tracking-tight text-center">
+            About Me
+          </h1>
           <div className="flex justify-center mt-4">
             <hr className="border-[1.1px] border-slate-700 w-[18rem] " />
           </div>
 
-          <h3 className="text-lg mt-5 text-slate-500">Who I Am</h3>
+          <h3 className="text-lg mt-5 text-slate-500 text-center">Who I Am</h3>
         </div>
         <div className="flex justify-between mt-20">
           <div className="flex flex-col gap-10 items-center justify-center ml-40">
