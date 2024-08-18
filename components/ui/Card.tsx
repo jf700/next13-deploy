@@ -14,7 +14,9 @@ export function CardDemo({
 }) {
   return (
     <Card>
-      <div className="flex justify-center mt-20 pb-3">{icon}</div>
+      <div className="flex justify-center mt-8 lg:mt-20 md:mt-8 pb-2">
+        {icon}
+      </div>
 
       <CardTitle className="mt-2">{title}</CardTitle>
       <CardDescription>{message}</CardDescription>
@@ -79,42 +81,7 @@ const Skeleton = () => {
     });
   }, []);
   return (
-    <div className="p-8 overflow-hidden h-full relative flex items-center justify-center"></div>
-  );
-};
-const Sparkles = () => {
-  const randomMove = () => Math.random() * 2 - 1;
-  const randomOpacity = () => Math.random();
-  const random = () => Math.random();
-  return (
-    <div className="absolute inset-0">
-      {[...Array(12)].map((_, i) => (
-        <motion.span
-          key={`star-${i}`}
-          animate={{
-            top: `calc(${random() * 100}% + ${randomMove()}px)`,
-            left: `calc(${random() * 100}% + ${randomMove()}px)`,
-            opacity: randomOpacity(),
-            scale: [1, 1.2, 0],
-          }}
-          transition={{
-            duration: random() * 2 + 4,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          style={{
-            position: "absolute",
-            top: `${random() * 100}%`,
-            left: `${random() * 100}%`,
-            width: `2px`,
-            height: `2px`,
-            borderRadius: "50%",
-            zIndex: 1,
-          }}
-          className="inline-block bg-black dark:bg-white"
-        ></motion.span>
-      ))}
-    </div>
+    <div className="p-8 overflow-hidden h-full relative flex flex-row items-center justify-center"></div>
   );
 };
 
@@ -128,7 +95,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(186, 230, 253)] dark:bg-[rgba(34,38,39,0.7)] bg-sky-200 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.09)_inset] group justify-center items-center",
+        "max-w-sm w-full lg:h-full md:h-[82%] mx-auto p-6 md:p-8 rounded-xl border border-white dark:bg-[rgba(26,26,26,0.7)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >
@@ -185,14 +152,7 @@ export const CardSkeletonContainer = ({
   showGradient?: boolean;
 }) => {
   return (
-    <div
-      className={cn(
-        "h-[4rem] md:h-[7rem] rounded-xl z-40",
-        className,
-        showGradient &&
-          "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
-      )}
-    >
+    <div className={cn("h-[4rem] md:h-[7rem] rounded-xl z-40", className)}>
       {children}
     </div>
   );

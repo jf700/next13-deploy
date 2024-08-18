@@ -16,8 +16,8 @@ const Specialities = () => {
           <hr className="border-[1.1px] border-slate-700 w-[25rem] " />
         </div>
 
-        <div className="flex mt-20 justify-around gap-2">
-          <div className="hover:-translate-y-7 ease-in-out duration-500">
+        <div className=" cursor-default flex md:flex-row flex-col mt-20 justify-around gap-8 md:gap-4 lg:gap-2">
+          <div className="md:hover:-translate-y-7 md:hover:translate-x-0 hover:translate-x-7 ease-in-out duration-500">
             <CardDemo
               title={"Software Development"}
               message={
@@ -26,7 +26,7 @@ const Specialities = () => {
               icon={<RiComputerLine size={50} color="#bae6fd" />}
             />
           </div>
-          <div className="hover:-translate-y-7 ease-in-out duration-500">
+          <div className="md:hover:-translate-y-7 md:hover:translate-x-0 hover:translate-x-7 ease-in-out duration-500">
             <CardDemo
               title={"Frontend Development"}
               message={
@@ -35,7 +35,7 @@ const Specialities = () => {
               icon={<FaRegFileCode size={50} color="#bae6fd" />}
             />
           </div>
-          <div className="hover:-translate-y-7 ease-in-out duration-500">
+          <div className="md:hover:-translate-y-7 md:hover:translate-x-0 hover:translate-x-7 ease-in-out duration-500">
             <CardDemo
               title={"iOS Development"}
               message={
